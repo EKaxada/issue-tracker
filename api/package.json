@@ -16,6 +16,12 @@
     "scripts": {
         "start": "nodemon -e js,graphql -w . -w .env server.js",
         "compile": "babel src --out-dir public",
-        "watch": "babel src --out-dir public --watch --verbose"
+        "watch": "babel src --out-dir public --watch --verbose",
+        "lint": "eslint . --fix"
+    },
+    "devDependencies": {
+        "eslint": "^7.25.0",
+        "eslint-config-airbnb-base": "^14.2.1",
+        "eslint-plugin-import": "^2.22.1"
     }
 }

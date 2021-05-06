@@ -13,12 +13,18 @@
     "scripts": {
         "start": "nodemon -w uiserver.js -w .env uiserver.js",
         "compile": "babel src --out-dir public",
-        "watch": "babel src --out-dir public --watch --verbose"
+        "watch": "babel src --out-dir public --watch --verbose",
+        "lint": "eslint . --ext js,jsx --ignore-pattern public --fix"
     },
     "devDependencies": {
         "@babel/cli": "^7.13.16",
         "@babel/core": "^7.13.16",
         "@babel/preset-env": "^7.13.15",
-        "@babel/preset-react": "^7.13.13"
+        "@babel/preset-react": "^7.13.13",
+        "eslint": "^7.25.0",
+        "eslint-config-airbnb": "^18.2.1",
+        "eslint-plugin-import": "^2.22.1",
+        "eslint-plugin-jsx-a11y": "^6.4.1",
+        "eslint-plugin-react": "^7.23.2"
     }
 }
