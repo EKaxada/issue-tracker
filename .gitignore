@@ -1,7 +1,7 @@
 node_modules
 package-lock.json
 *.lock
-ui/public/*.js
-ui/public/*.map
+public/*.js
+public/*.map
 .env
-ui/dist
+dist
