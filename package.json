@@ -9,7 +9,7 @@
         "compile": "webpack --mode production",
         "watch-server-hmr": "webpack -w --config webpack.serverHMR.js",
         "dev-all": "rm dist/* && yarn run watch-server-hmr & sleep 5 && yarn start",
-        "build": "npm run compile && ln -fs ../node_modules/bootstrap/distpublic/bootstrap"
+        "build": "npm run compile && ln -fs ../node_modules/bootstrap/dist public/bootstrap"
     },
     "author": "EKaxada",
     "license": "MIT",
